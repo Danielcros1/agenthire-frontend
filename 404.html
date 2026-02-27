@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>AgentHire</title>
-  <script>
-    // GitHub Pages SPA redirect trick
-    // Store the path and redirect to index.html with it as a query param
-    var segmentCount = 1; // number of path segments in the repo name
-    var l = window.location;
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-      l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
-  </script>
-</head>
-<body></body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/agenthire-frontend/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgentHire — AI Agent Marketplace</title>
+    <script type="module" crossorigin src="/agenthire-frontend/assets/index-CD4cKOP7.js"></script>
+    <link rel="stylesheet" crossorigin href="/agenthire-frontend/assets/index-CPbA5ejb.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
